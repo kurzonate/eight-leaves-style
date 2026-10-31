@@ -40,6 +40,28 @@ def walk(base):
     return out
 
 
+SCRIPTS = ('chr5000', 'btlcom')                                              # the scripts the mod changes
+SCRIPT_ARCHIVES = (('script.pac', 'script'), ('script_en.pac', 'script_en'))   # as port/build.py packs them
+
+
+def mod_files():
+    """(archive, path inside it, file) of the mod's own changed files: the compiled scripts straight from the
+    compiler's output (scripts/<name>/<name>.dat), into both script archives, and the tables. The script override
+    folders are only refreshed by build.py's archives step: v1.0.1 and the first v1.0.2 builds took them from there
+    and shipped this morning's scripts (no Zeroth Gleam position fix, no learning check)."""
+    out = []
+    for archive, folder in SCRIPT_ARCHIVES:
+        for name in SCRIPTS:
+            out.append((archive, f'{folder}/ani/{name}.dat', os.path.join(BUILD, 'scripts', name, name + '.dat')))
+    newest = max(os.path.getmtime(f) for _, _, f in out)
+    base = os.path.join(BUILD, 'tables', 'override')
+    for archive in sorted(os.listdir(base)):
+        for name, full in walk(os.path.join(base, archive)).items():
+            assert os.path.getmtime(full) >= newest - 3600, f'{full} is older than the scripts: rebuild the tables'
+            out.append((archive, name, full))
+    return out
+
+
 def data():
     shutil.rmtree(DATA, ignore_errors=True)
     os.makedirs(DATA)
@@ -50,18 +72,15 @@ def data():
             m['sha1'][f'{archive}/{name}'] = hashlib.sha1(open(full, 'rb').read()).hexdigest()
     assert len(m['sha1']) == len(m['files']), (len(m['sha1']), len(m['files']))
     m['mod_files'], m['replaces'] = {}, {}
-    for stage in ('scripts', 'tables'):
-        base = os.path.join(BUILD, stage, 'override')
-        for archive in sorted(os.listdir(base)):
-            for name, full in walk(os.path.join(base, archive)).items():
-                assert archive not in FROM_HORIZON, archive
-                m['mod_files'].setdefault(archive, []).append(name)
-                dst = os.path.join(DATA, 'files', archive, *name.split('/'))
-                os.makedirs(os.path.dirname(dst), exist_ok=True)
-                shutil.copyfile(full, dst)
-                orig = SP.read_entry(os.path.join(ORIGINAL, archive), name)
-                assert orig is not None, f'{archive}/{name} is not in the original archive'
-                m['replaces'][f'{archive}/{name}'] = hashlib.sha1(orig).hexdigest()
+    for archive, name, full in mod_files():
+        assert archive not in FROM_HORIZON, archive
+        m['mod_files'].setdefault(archive, []).append(name)
+        dst = os.path.join(DATA, 'files', archive, *name.split('/'))
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        shutil.copyfile(full, dst)
+        orig = SP.read_entry(os.path.join(ORIGINAL, archive), name)
+        assert orig is not None, f'{archive}/{name} is not in the original archive'
+        m['replaces'][f'{archive}/{name}'] = hashlib.sha1(orig).hexdigest()
     del m['files']
     json.dump(m, open(os.path.join(DATA, 'manifest.json'), 'w', encoding='utf8'), indent=1, ensure_ascii=False)
     shutil.copyfile(os.path.join(ROOT, 'grendel_test', 'sky_shader_combos.json'), os.path.join(DATA, 'sky_shader_combos.json'))

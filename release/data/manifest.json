@@ -491,12 +491,12 @@
  },
  "mod_files": {
   "script.pac": [
-   "script/ani/btlcom.dat",
-   "script/ani/chr5000.dat"
+   "script/ani/chr5000.dat",
+   "script/ani/btlcom.dat"
   ],
   "script_en.pac": [
-   "script_en/ani/btlcom.dat",
-   "script_en/ani/chr5000.dat"
+   "script_en/ani/chr5000.dat",
+   "script_en/ani/btlcom.dat"
   ],
   "table.pac": [
    "table/t_skill.tbl",
@@ -508,10 +508,10 @@
   ]
  },
  "replaces": {
-  "script.pac/script/ani/btlcom.dat": "8691d769ac9fd654d2c5713499751588063cf020",
   "script.pac/script/ani/chr5000.dat": "9fd2aa62647cd6a6cee3ae51f9e09730aef8464a",
-  "script_en.pac/script_en/ani/btlcom.dat": "8691d769ac9fd654d2c5713499751588063cf020",
+  "script.pac/script/ani/btlcom.dat": "8691d769ac9fd654d2c5713499751588063cf020",
   "script_en.pac/script_en/ani/chr5000.dat": "9fd2aa62647cd6a6cee3ae51f9e09730aef8464a",
+  "script_en.pac/script_en/ani/btlcom.dat": "8691d769ac9fd654d2c5713499751588063cf020",
   "table.pac/table/t_skill.tbl": "da2bbd0ee674871590bdbe92517024613b28e6fb",
   "table.pac/table/t_status.tbl": "8ad1e416e1239240ff27207bf540dac4d5ccbcbc",
   "table_en.pac/table_en/t_skill.tbl": "3bf8a48e1b3ebefd70f7784f4df459f80f2c66d3",
