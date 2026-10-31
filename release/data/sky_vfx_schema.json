@@ -1,0 +1,4940 @@
+{
+"files": 4370,
+"paths": {
+"": {
+"objects": 4370,
+"required": [
+"VFX"
+],
+"order": [
+"VFX"
+],
+"defaults": {}
+},
+"/VFX": {
+"objects": 4370,
+"required": [
+"flags",
+"color",
+"alpha",
+"ambient_color_ratio",
+"specular",
+"hsv",
+"aabb",
+"Emitter"
+],
+"order": [
+"flags",
+"color",
+"alpha",
+"ambient_color_ratio",
+"specular",
+"hsv",
+"play_speed",
+"aabb",
+"Emitter"
+],
+"defaults": {
+"flags": 0,
+"color": {
+"r": 1,
+"g": 1,
+"b": 1
+},
+"alpha": 1,
+"ambient_color_ratio": 0,
+"specular": {
+"r": 0,
+"g": 0,
+"b": 0
+},
+"hsv": {
+"h": 0,
+"s": 1,
+"v": 1
+},
+"aabb": {
+"min_x": -6.89836,
+"min_y": -7.59836,
+"min_z": -6.89836,
+"max_x": 6.89836,
+"max_y": 6.89836,
+"max_z": 6.89836
+}
+}
+},
+"/VFX/color": {
+"objects": 4369,
+"required": [
+"r",
+"g",
+"b"
+],
+"order": [
+"r",
+"g",
+"b"
+],
+"defaults": {
+"r": 1,
+"g": 1,
+"b": 1
+}
+},
+"/VFX/specular": {
+"objects": 4369,
+"required": [
+"r",
+"g",
+"b"
+],
+"order": [
+"r",
+"g",
+"b"
+],
+"defaults": {
+"r": 0,
+"g": 0,
+"b": 0
+}
+},
+"/VFX/hsv": {
+"objects": 4369,
+"required": [
+"h",
+"s",
+"v"
+],
+"order": [
+"h",
+"s",
+"v"
+],
+"defaults": {
+"h": 0,
+"s": 1,
+"v": 1
+}
+},
+"/VFX/aabb": {
+"objects": 4369,
+"required": [
+"min_x",
+"min_y",
+"min_z",
+"max_x",
+"max_y",
+"max_z"
+],
+"order": [
+"min_x",
+"min_y",
+"min_z",
+"max_x",
+"max_y",
+"max_z"
+],
+"defaults": {
+"min_x": -6.89836,
+"min_y": -7.59836,
+"min_z": -6.89836,
+"max_x": 6.89836,
+"max_y": 6.89836,
+"max_z": 6.89836
+}
+},
+"/VFX/Emitter[]": {
+"objects": 86655,
+"required": [
+"node_pos",
+"name",
+"flags",
+"platform_flags",
+"space",
+"duration",
+"spawn_delay_min",
+"spawn_delay_max",
+"Module"
+],
+"order": [
+"node_pos",
+"name",
+"flags",
+"platform_flags",
+"space",
+"duration",
+"spawn_delay_min",
+"spawn_delay_max",
+"Module",
+"is_scaling_for_widescreen",
+"Memo"
+],
+"defaults": {
+"node_pos": {
+"x": 322,
+"y": 183
+},
+"name": "Null",
+"flags": 32817,
+"platform_flags": -1,
+"space": 0,
+"duration": 1,
+"spawn_delay_min": 0,
+"spawn_delay_max": 0
+}
+},
+"/VFX/Emitter[]/node_pos": {
+"objects": 86655,
+"required": [
+"x",
+"y"
+],
+"order": [
+"x",
+"y"
+],
+"defaults": {
+"x": 651.032,
+"y": 183
+}
+},
+"/VFX/Emitter[]/Module[Spawn]": {
+"objects": 86655,
+"required": [
+"type",
+"interval",
+"delay",
+"count",
+"max_count",
+"flags",
+"min_time",
+"max_time",
+"is_loop"
+],
+"order": [
+"type",
+"interval",
+"delay",
+"count",
+"max_count",
+"flags",
+"min_time",
+"max_time",
+"is_loop"
+],
+"defaults": {
+"type": "Spawn",
+"interval": 1,
+"delay": 0,
+"count": 1,
+"max_count": 1,
+"flags": 3,
+"min_time": 1,
+"max_time": 1,
+"is_loop": false
+}
+},
+"/VFX/Emitter[]/Module[Position]": {
+"objects": 86655,
+"required": [
+"type",
+"shape",
+"shape_param",
+"axis",
+"flags",
+"offset"
+],
+"order": [
+"type",
+"shape",
+"shape_param",
+"axis",
+"flags",
+"offset"
+],
+"defaults": {
+"type": "Position",
+"shape": 0,
+"shape_param": {
+"x": 0,
+"y": 0,
+"z": 0,
+"w": 0
+},
+"axis": 2,
+"flags": 1,
+"offset": {
+"x": 0,
+"y": 0,
+"z": 0
+}
+}
+},
+"/VFX/Emitter[]/Module[Position]/shape_param": {
+"objects": 86655,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 0,
+"y": 0,
+"z": 0,
+"w": 0
+}
+},
+"/VFX/Emitter[]/Module[Position]/offset": {
+"objects": 86655,
+"required": [
+"x",
+"y",
+"z"
+],
+"order": [
+"x",
+"y",
+"z"
+],
+"defaults": {
+"x": 0,
+"y": 0,
+"z": 0
+}
+},
+"/VFX/Emitter[]/Module[Velocity]": {
+"objects": 86655,
+"required": [
+"type",
+"shape",
+"shape_param",
+"axis",
+"flags",
+"min_speed",
+"max_speed",
+"acceleration",
+"gravity"
+],
+"order": [
+"type",
+"shape",
+"shape_param",
+"axis",
+"flags",
+"min_speed",
+"max_speed",
+"acceleration",
+"gravity"
+],
+"defaults": {
+"type": "Velocity",
+"shape": 0,
+"shape_param": {
+"x": 0,
+"y": 0,
+"z": 0,
+"w": 0
+},
+"axis": 2,
+"flags": 1,
+"min_speed": 0,
+"max_speed": 0,
+"acceleration": 0,
+"gravity": 0
+}
+},
+"/VFX/Emitter[]/Module[Velocity]/shape_param": {
+"objects": 86655,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 0,
+"y": 0,
+"z": 0,
+"w": 0
+}
+},
+"/VFX/Emitter[]/Module[Animation]": {
+"objects": 86655,
+"required": [
+"type",
+"position",
+"rotation",
+"scale",
+"orbit_rotation",
+"position_scale",
+"position_random",
+"position_offset",
+"rotation_random",
+"scale_random",
+"orbit_rotation_random",
+"position_scale_random",
+"apply_orbit_rot",
+"scale_random_xyz",
+"scale_sync"
+],
+"order": [
+"type",
+"position",
+"rotation",
+"scale",
+"orbit_rotation",
+"position_scale",
+"position_random",
+"position_offset",
+"rotation_random",
+"scale_random",
+"orbit_rotation_random",
+"position_scale_random",
+"apply_orbit_rot",
+"scale_random_xyz",
+"scale_sync"
+],
+"defaults": {
+"type": "Animation",
+"position": {
+"name": "position",
+"target": "",
+"attr": 14,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0
+]
+}
+]
+},
+"rotation": {
+"name": "rotation",
+"target": "",
+"attr": 14,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0
+]
+}
+]
+},
+"scale": {
+"name": "scale",
+"target": "",
+"attr": 14,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1
+]
+}
+]
+},
+"orbit_rotation": {
+"name": "orbit_rotation",
+"target": "",
+"attr": 14,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0
+]
+}
+]
+},
+"position_scale": {
+"name": "position_scale",
+"target": "",
+"attr": 14,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1
+]
+}
+]
+},
+"position_random": {
+"x": 0,
+"y": 0,
+"z": 0
+},
+"position_offset": {
+"x": 0,
+"y": 0,
+"z": 0
+},
+"rotation_random": {
+"x": 0,
+"y": 0,
+"z": 0
+},
+"scale_random": {
+"x": 0,
+"y": 0,
+"z": 0
+},
+"orbit_rotation_random": {
+"x": 0,
+"y": 0,
+"z": 0
+},
+"position_scale_random": {
+"x": 0,
+"y": 0,
+"z": 0
+},
+"apply_orbit_rot": false,
+"scale_random_xyz": false,
+"scale_sync": false
+}
+},
+"/VFX/Emitter[]/Module[Animation]/position": {
+"objects": 86655,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "position",
+"target": "",
+"attr": 14,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[Animation]/position/Keys[]": {
+"objects": 97708,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[Animation]/rotation": {
+"objects": 86655,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "rotation",
+"target": "",
+"attr": 14,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[Animation]/rotation/Keys[]": {
+"objects": 100454,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[Animation]/scale": {
+"objects": 86655,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "scale",
+"target": "",
+"attr": 14,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[Animation]/scale/Keys[]": {
+"objects": 160272,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[Animation]/orbit_rotation": {
+"objects": 86655,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "orbit_rotation",
+"target": "",
+"attr": 14,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[Animation]/orbit_rotation/Keys[]": {
+"objects": 88346,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[Animation]/position_scale": {
+"objects": 86655,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "position_scale",
+"target": "",
+"attr": 14,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[Animation]/position_scale/Keys[]": {
+"objects": 93069,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[Animation]/position_random": {
+"objects": 86655,
+"required": [
+"x",
+"y",
+"z"
+],
+"order": [
+"x",
+"y",
+"z"
+],
+"defaults": {
+"x": 0,
+"y": 0,
+"z": 0
+}
+},
+"/VFX/Emitter[]/Module[Animation]/position_offset": {
+"objects": 86655,
+"required": [
+"x",
+"y",
+"z"
+],
+"order": [
+"x",
+"y",
+"z"
+],
+"defaults": {
+"x": 0,
+"y": 0,
+"z": 0
+}
+},
+"/VFX/Emitter[]/Module[Animation]/rotation_random": {
+"objects": 86655,
+"required": [
+"x",
+"y",
+"z"
+],
+"order": [
+"x",
+"y",
+"z"
+],
+"defaults": {
+"x": 0,
+"y": 0,
+"z": 0
+}
+},
+"/VFX/Emitter[]/Module[Animation]/scale_random": {
+"objects": 86655,
+"required": [
+"x",
+"y",
+"z"
+],
+"order": [
+"x",
+"y",
+"z"
+],
+"defaults": {
+"x": 0,
+"y": 0,
+"z": 0
+}
+},
+"/VFX/Emitter[]/Module[Animation]/orbit_rotation_random": {
+"objects": 86655,
+"required": [
+"x",
+"y",
+"z"
+],
+"order": [
+"x",
+"y",
+"z"
+],
+"defaults": {
+"x": 0,
+"y": 0,
+"z": 0
+}
+},
+"/VFX/Emitter[]/Module[Animation]/position_scale_random": {
+"objects": 86655,
+"required": [
+"x",
+"y",
+"z"
+],
+"order": [
+"x",
+"y",
+"z"
+],
+"defaults": {
+"x": 0,
+"y": 0,
+"z": 0
+}
+},
+"/VFX/Emitter[]/Module[Event]": {
+"objects": 79548,
+"required": [
+"type",
+"condition",
+"interval",
+"invalid_time",
+"event_type",
+"flag",
+"target_emitter",
+"target_node_name",
+"emit_rotation_limit"
+],
+"order": [
+"type",
+"condition",
+"interval",
+"invalid_time",
+"event_type",
+"flag",
+"target_emitter",
+"target_node_name",
+"emit_rotation_limit",
+"SE",
+"UserParam"
+],
+"defaults": {
+"type": "Event",
+"condition": 0,
+"interval": 0.3,
+"invalid_time": 0,
+"event_type": 0,
+"flag": 0,
+"target_emitter": 1,
+"target_node_name": "",
+"emit_rotation_limit": 0
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]": {
+"objects": 3177,
+"required": [
+"type",
+"shape_param",
+"edge_alpha_u",
+"edge_alpha_v",
+"color",
+"specular",
+"dissolve",
+"distortion",
+"rim_alpha",
+"depth_fade_width",
+"camera_fade_param",
+"model_name",
+"Clip",
+"no_cull",
+"play_speed"
+],
+"order": [
+"type",
+"shape_param",
+"edge_alpha_u",
+"edge_alpha_v",
+"color",
+"specular",
+"dissolve",
+"distortion",
+"rim_alpha",
+"depth_fade_width",
+"camera_fade_param",
+"model_name",
+"Clip",
+"no_cull",
+"play_speed",
+"clip_start_random",
+"clip_start_random_snap"
+],
+"defaults": {
+"type": "ModelRenderer",
+"shape_param": {
+"x": 1,
+"y": 1,
+"z": 0,
+"w": 1
+},
+"edge_alpha_u": false,
+"edge_alpha_v": false,
+"color": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+1
+]
+}
+]
+},
+"specular": {
+"name": "specular",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0,
+1
+]
+}
+]
+},
+"dissolve": {
+"name": "dissolve",
+"target": "",
+"attr": 12,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+]
+},
+"distortion": {
+"name": "distortion",
+"target": "",
+"attr": 13,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+]
+},
+"rim_alpha": 0,
+"depth_fade_width": 0,
+"camera_fade_param": {
+"x": 0,
+"y": 1,
+"z": 0,
+"w": 1
+},
+"model_name": "ef_obj_a010",
+"Clip": [],
+"no_cull": false,
+"play_speed": 1
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]/shape_param": {
+"objects": 3177,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 1,
+"y": 1,
+"z": 0,
+"w": 1
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]/color": {
+"objects": 3177,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]/color/Keys[]": {
+"objects": 7117,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]/specular": {
+"objects": 3177,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "specular",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]/specular/Keys[]": {
+"objects": 3177,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]/dissolve": {
+"objects": 3177,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "dissolve",
+"target": "",
+"attr": 12,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]/dissolve/Keys[]": {
+"objects": 3177,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]/distortion": {
+"objects": 3177,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "distortion",
+"target": "",
+"attr": 13,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]/distortion/Keys[]": {
+"objects": 3177,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[ModelRenderer]/camera_fade_param": {
+"objects": 3177,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 0,
+"y": 1,
+"z": 0,
+"w": 1
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]": {
+"objects": 41881,
+"required": [
+"type",
+"shader_name",
+"texture",
+"blend_mode",
+"cull_mode",
+"depth_enable",
+"depth_write",
+"is_billboard",
+"is_billboard_y",
+"no_cull",
+"render_layer",
+"prio_offset",
+"camera_dir_bias",
+"shape_param",
+"edge_alpha_u",
+"edge_alpha_v",
+"color",
+"specular",
+"dissolve",
+"distortion",
+"rim_alpha",
+"depth_fade_width",
+"camera_fade_param",
+"mesh_name",
+"model_name"
+],
+"order": [
+"type",
+"shader_name",
+"texture",
+"blend_mode",
+"cull_mode",
+"depth_enable",
+"depth_write",
+"is_billboard",
+"is_billboard_y",
+"no_cull",
+"render_layer",
+"prio_offset",
+"camera_dir_bias",
+"shape_param",
+"edge_alpha_u",
+"edge_alpha_v",
+"color",
+"specular",
+"dissolve",
+"distortion",
+"rim_alpha",
+"depth_fade_width",
+"camera_fade_param",
+"mesh_name",
+"model_name"
+],
+"defaults": {
+"type": "MeshRenderer",
+"shader_name": "vfx_basic",
+"texture": [
+{
+"filename": "effl_a000",
+"flags": 0,
+"uv_mode": {
+"u": 0,
+"v": 0
+},
+"uv_info": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0.5,
+0.5
+]
+}
+]
+},
+"anime_info": {
+"start_random": 0,
+"start_random_snap": 0
+}
+}
+],
+"blend_mode": 1,
+"cull_mode": 2,
+"depth_enable": true,
+"depth_write": false,
+"is_billboard": false,
+"is_billboard_y": false,
+"no_cull": false,
+"render_layer": 0,
+"prio_offset": 0,
+"camera_dir_bias": 0,
+"shape_param": {
+"x": 1,
+"y": 1,
+"z": 0,
+"w": 1
+},
+"edge_alpha_u": false,
+"edge_alpha_v": true,
+"color": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+1
+]
+}
+]
+},
+"specular": {
+"name": "specular",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0,
+1
+]
+}
+]
+},
+"dissolve": {
+"name": "dissolve",
+"target": "",
+"attr": 12,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+]
+},
+"distortion": {
+"name": "distortion",
+"target": "",
+"attr": 13,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+]
+},
+"rim_alpha": 0,
+"depth_fade_width": 0,
+"camera_fade_param": {
+"x": 0,
+"y": 1,
+"z": 0,
+"w": 1
+},
+"mesh_name": "PlaneXY",
+"model_name": ""
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/texture[]": {
+"objects": 76341,
+"required": [
+"filename",
+"flags",
+"uv_mode",
+"uv_info"
+],
+"order": [
+"filename",
+"flags",
+"uv_mode",
+"uv_info",
+"anime_info"
+],
+"defaults": {
+"filename": "effl_a000",
+"flags": 0,
+"uv_mode": {
+"u": 0,
+"v": 0
+},
+"uv_info": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0.5,
+0.5
+]
+}
+]
+}
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/texture[]/uv_mode": {
+"objects": 76341,
+"required": [
+"u",
+"v"
+],
+"order": [
+"u",
+"v"
+],
+"defaults": {
+"u": 0,
+"v": 0
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/texture[]/uv_info": {
+"objects": 76341,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0.5,
+0.5
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/texture[]/uv_info/Keys[]": {
+"objects": 154292,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/shape_param": {
+"objects": 41881,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 1,
+"y": 1,
+"z": 0,
+"w": 1
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/color": {
+"objects": 41881,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/color/Keys[]": {
+"objects": 132155,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/specular": {
+"objects": 41881,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "specular",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/specular/Keys[]": {
+"objects": 80850,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/dissolve": {
+"objects": 41881,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "dissolve",
+"target": "",
+"attr": 12,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/dissolve/Keys[]": {
+"objects": 58752,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/distortion": {
+"objects": 41881,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "distortion",
+"target": "",
+"attr": 13,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/distortion/Keys[]": {
+"objects": 43974,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/camera_fade_param": {
+"objects": 41881,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 0,
+"y": 1,
+"z": 0,
+"w": 1
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]": {
+"objects": 10485,
+"required": [
+"type",
+"shader_name",
+"texture",
+"blend_mode",
+"cull_mode",
+"depth_enable",
+"depth_write",
+"is_billboard",
+"is_billboard_y",
+"no_cull",
+"render_layer",
+"prio_offset",
+"camera_dir_bias",
+"shape_param",
+"edge_alpha_u",
+"edge_alpha_v",
+"color",
+"specular",
+"dissolve",
+"distortion",
+"rim_alpha",
+"depth_fade_width",
+"camera_fade_param",
+"mesh_name",
+"model_name"
+],
+"order": [
+"type",
+"shader_name",
+"texture",
+"blend_mode",
+"cull_mode",
+"depth_enable",
+"depth_write",
+"is_billboard",
+"is_billboard_y",
+"no_cull",
+"render_layer",
+"prio_offset",
+"camera_dir_bias",
+"shape_param",
+"edge_alpha_u",
+"edge_alpha_v",
+"color",
+"specular",
+"dissolve",
+"distortion",
+"rim_alpha",
+"depth_fade_width",
+"camera_fade_param",
+"mesh_name",
+"model_name"
+],
+"defaults": {
+"type": "GPUParticleRenderer",
+"shader_name": "vfx_gpu_basic",
+"texture": [
+{
+"filename": "effl_a029",
+"flags": 0,
+"uv_mode": {
+"u": 0,
+"v": 0
+},
+"uv_info": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+1,
+0.71875
+]
+}
+]
+},
+"anime_info": {
+"start_random": 0,
+"start_random_snap": 0
+}
+}
+],
+"blend_mode": 2,
+"cull_mode": 0,
+"depth_enable": true,
+"depth_write": false,
+"is_billboard": false,
+"is_billboard_y": false,
+"no_cull": false,
+"render_layer": 0,
+"prio_offset": 0,
+"camera_dir_bias": 0,
+"shape_param": {
+"x": 1,
+"y": 1,
+"z": 0,
+"w": 1
+},
+"edge_alpha_u": false,
+"edge_alpha_v": true,
+"color": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+1
+]
+}
+]
+},
+"specular": {
+"name": "specular",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0.295154,
+0.255895,
+0.235343,
+1
+]
+}
+]
+},
+"dissolve": {
+"name": "dissolve",
+"target": "",
+"attr": 12,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+]
+},
+"distortion": {
+"name": "distortion",
+"target": "",
+"attr": 13,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+]
+},
+"rim_alpha": 0,
+"depth_fade_width": 0,
+"camera_fade_param": {
+"x": 0,
+"y": 1,
+"z": 0,
+"w": 1
+},
+"mesh_name": "PlaneXY",
+"model_name": ""
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/texture[]": {
+"objects": 10485,
+"required": [
+"filename",
+"flags",
+"uv_mode",
+"uv_info"
+],
+"order": [
+"filename",
+"flags",
+"uv_mode",
+"uv_info",
+"anime_info"
+],
+"defaults": {
+"filename": "effl_a000",
+"flags": 0,
+"uv_mode": {
+"u": 0,
+"v": 0
+},
+"uv_info": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0.5,
+0,
+0.5,
+0.5
+]
+}
+]
+}
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/texture[]/uv_mode": {
+"objects": 10485,
+"required": [
+"u",
+"v"
+],
+"order": [
+"u",
+"v"
+],
+"defaults": {
+"u": 0,
+"v": 0
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/texture[]/uv_info": {
+"objects": 10485,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0.5,
+0,
+0.5,
+0.5
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/texture[]/uv_info/Keys[]": {
+"objects": 13257,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0.5,
+0,
+0.5,
+0.5
+]
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/shape_param": {
+"objects": 10485,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 1,
+"y": 1,
+"z": 0,
+"w": 1
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/color": {
+"objects": 10485,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/color/Keys[]": {
+"objects": 39467,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/specular": {
+"objects": 10485,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "specular",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0.295154,
+0.255895,
+0.235343,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/specular/Keys[]": {
+"objects": 27962,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+0,
+0,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/dissolve": {
+"objects": 10485,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "dissolve",
+"target": "",
+"attr": 12,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/dissolve/Keys[]": {
+"objects": 10490,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/distortion": {
+"objects": 10485,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "distortion",
+"target": "",
+"attr": 13,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/distortion/Keys[]": {
+"objects": 10485,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/camera_fade_param": {
+"objects": 10485,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 0,
+"y": 1,
+"z": 0,
+"w": 1
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]": {
+"objects": 2772,
+"required": [
+"type",
+"shader_name",
+"texture",
+"blend_mode",
+"cull_mode",
+"depth_enable",
+"depth_write",
+"is_billboard",
+"is_billboard_y",
+"no_cull",
+"render_layer",
+"prio_offset",
+"camera_dir_bias",
+"shape_param",
+"edge_alpha_u",
+"edge_alpha_v",
+"color",
+"specular",
+"dissolve",
+"distortion",
+"rim_alpha",
+"depth_fade_width",
+"camera_fade_param"
+],
+"order": [
+"type",
+"shader_name",
+"texture",
+"blend_mode",
+"cull_mode",
+"depth_enable",
+"depth_write",
+"is_billboard",
+"is_billboard_y",
+"no_cull",
+"render_layer",
+"prio_offset",
+"camera_dir_bias",
+"shape_param",
+"edge_alpha_u",
+"edge_alpha_v",
+"color",
+"specular",
+"dissolve",
+"distortion",
+"rim_alpha",
+"depth_fade_width",
+"camera_fade_param"
+],
+"defaults": {
+"type": "DecalRenderer",
+"shader_name": "vfx_decal_multi_color_alpha",
+"texture": [
+{
+"filename": "effl_a000",
+"flags": 0,
+"uv_mode": {
+"u": 0,
+"v": 0
+},
+"uv_info": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0.5,
+0.5
+]
+}
+]
+},
+"anime_info": {
+"start_random": 0,
+"start_random_snap": 0
+}
+}
+],
+"blend_mode": 1,
+"cull_mode": 1,
+"depth_enable": false,
+"depth_write": false,
+"is_billboard": false,
+"is_billboard_y": false,
+"no_cull": false,
+"render_layer": 0,
+"prio_offset": 0,
+"camera_dir_bias": 0,
+"shape_param": {
+"x": 1,
+"y": 1,
+"z": 0,
+"w": 1
+},
+"edge_alpha_u": false,
+"edge_alpha_v": true,
+"color": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0.545455,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+1
+]
+},
+{
+"time": 1,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+0
+]
+}
+]
+},
+"specular": {
+"name": "specular",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0,
+1
+]
+}
+]
+},
+"dissolve": {
+"name": "dissolve",
+"target": "",
+"attr": 12,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+]
+},
+"distortion": {
+"name": "distortion",
+"target": "",
+"attr": 13,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+]
+},
+"rim_alpha": 0,
+"depth_fade_width": 0,
+"camera_fade_param": {
+"x": 0,
+"y": 1,
+"z": 0,
+"w": 1
+}
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/texture[]": {
+"objects": 6095,
+"required": [
+"filename",
+"flags",
+"uv_mode",
+"uv_info"
+],
+"order": [
+"filename",
+"flags",
+"uv_mode",
+"uv_info",
+"anime_info"
+],
+"defaults": {
+"filename": "effl_a000",
+"flags": 0,
+"uv_mode": {
+"u": 0,
+"v": 0
+},
+"uv_info": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+1,
+1
+]
+}
+]
+}
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/texture[]/uv_mode": {
+"objects": 6095,
+"required": [
+"u",
+"v"
+],
+"order": [
+"u",
+"v"
+],
+"defaults": {
+"u": 0,
+"v": 0
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/texture[]/uv_info": {
+"objects": 6095,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/texture[]/uv_info/Keys[]": {
+"objects": 6651,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/shape_param": {
+"objects": 2772,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 1,
+"y": 1,
+"z": 0,
+"w": 1
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/color": {
+"objects": 2772,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0.545455,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+1
+]
+},
+{
+"time": 1,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+0
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/color/Keys[]": {
+"objects": 8806,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 1,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/specular": {
+"objects": 2772,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "specular",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/specular/Keys[]": {
+"objects": 4462,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+0,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/dissolve": {
+"objects": 2772,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "dissolve",
+"target": "",
+"attr": 12,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/dissolve/Keys[]": {
+"objects": 4502,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/distortion": {
+"objects": 2772,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "distortion",
+"target": "",
+"attr": 13,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/distortion/Keys[]": {
+"objects": 2861,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/camera_fade_param": {
+"objects": 2772,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 0,
+"y": 1,
+"z": 0,
+"w": 1
+}
+},
+"/VFX/Emitter[]/Module[Light]": {
+"objects": 2198,
+"required": [
+"type",
+"color",
+"light_type",
+"intensity",
+"attenuation",
+"translucency",
+"r",
+"g",
+"b",
+"specular_intensity",
+"glossiness",
+"far_clip",
+"fade_time",
+"scatter_intensity",
+"scatter_anisotropy",
+"scatter_density",
+"chara_intensity",
+"fade_band",
+"anime_speed",
+"out_scene_clip_disable",
+"anime_random_shift",
+"disable"
+],
+"order": [
+"type",
+"color",
+"light_type",
+"radius",
+"intensity",
+"attenuation",
+"translucency",
+"r",
+"g",
+"b",
+"specular_intensity",
+"glossiness",
+"far_clip",
+"fade_time",
+"scatter_intensity",
+"scatter_anisotropy",
+"scatter_density",
+"chara_intensity",
+"radius_band",
+"fade_band",
+"anime_speed",
+"out_scene_clip_disable",
+"anime_random_shift",
+"disable",
+"distance",
+"spot_angle",
+"attenuation_spot_angle",
+"scatter_offset",
+"shadow_mode"
+],
+"defaults": {
+"type": "Light",
+"color": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+0.791667,
+0,
+1
+]
+},
+{
+"time": 0.169697,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+0.317181,
+0,
+1
+]
+},
+{
+"time": 1,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+0.370044,
+0,
+0
+]
+}
+]
+},
+"light_type": 0,
+"intensity": 3,
+"attenuation": 1,
+"translucency": 0,
+"r": 0,
+"g": 0,
+"b": 0,
+"specular_intensity": 1,
+"glossiness": 1,
+"far_clip": 50,
+"fade_time": 0.5,
+"scatter_intensity": 1,
+"scatter_anisotropy": 0.25,
+"scatter_density": 0,
+"chara_intensity": -1,
+"fade_band": 0,
+"anime_speed": 0,
+"out_scene_clip_disable": false,
+"anime_random_shift": false,
+"disable": false
+}
+},
+"/VFX/Emitter[]/Module[Light]/color": {
+"objects": 2198,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+0.716509,
+0.22467,
+0.989236
+]
+},
+{
+"time": 0.406061,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+0.476237,
+0.132159,
+0.951542
+]
+},
+{
+"time": 0.839394,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0.704846,
+0.0465757,
+0.0465757,
+0
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[Light]/color/Keys[]": {
+"objects": 8716,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0.704846,
+0.0465757,
+0.0465757,
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[Noise]": {
+"objects": 5681,
+"required": [
+"type",
+"noise_type",
+"param"
+],
+"order": [
+"type",
+"noise_type",
+"param"
+],
+"defaults": {
+"type": "Noise",
+"noise_type": 0,
+"param": {
+"x": 0.3,
+"y": 90,
+"z": 0,
+"w": 0
+}
+}
+},
+"/VFX/Emitter[]/Module[Noise]/param": {
+"objects": 5681,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 0.3,
+"y": 90,
+"z": 0,
+"w": 0
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]": {
+"objects": 892,
+"required": [
+"type",
+"shader_name",
+"texture",
+"blend_mode",
+"cull_mode",
+"depth_enable",
+"depth_write",
+"is_billboard",
+"is_billboard_y",
+"no_cull",
+"render_layer",
+"prio_offset",
+"camera_dir_bias",
+"shape_param",
+"edge_alpha_u",
+"edge_alpha_v",
+"color",
+"specular",
+"dissolve",
+"distortion",
+"rim_alpha",
+"depth_fade_width",
+"camera_fade_param",
+"point_count",
+"subdiv_count",
+"width",
+"width_bias",
+"width_axis",
+"trail_flag"
+],
+"order": [
+"type",
+"shader_name",
+"texture",
+"blend_mode",
+"cull_mode",
+"depth_enable",
+"depth_write",
+"is_billboard",
+"is_billboard_y",
+"no_cull",
+"render_layer",
+"prio_offset",
+"camera_dir_bias",
+"shape_param",
+"edge_alpha_u",
+"edge_alpha_v",
+"color",
+"specular",
+"dissolve",
+"distortion",
+"rim_alpha",
+"depth_fade_width",
+"camera_fade_param",
+"point_count",
+"subdiv_count",
+"width",
+"width_bias",
+"width_axis",
+"trail_flag"
+],
+"defaults": {
+"type": "TrailRenderer",
+"shader_name": "vfx_trail_basic",
+"texture": [
+{
+"filename": "efsh_a018",
+"flags": 2,
+"uv_mode": {
+"u": 0,
+"v": 0
+},
+"uv_info": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+1,
+1
+]
+}
+]
+}
+}
+],
+"blend_mode": 1,
+"cull_mode": 0,
+"depth_enable": true,
+"depth_write": false,
+"is_billboard": true,
+"is_billboard_y": false,
+"no_cull": false,
+"render_layer": 0,
+"prio_offset": 0,
+"camera_dir_bias": 0,
+"shape_param": {
+"x": 1,
+"y": 1,
+"z": 0,
+"w": 1
+},
+"edge_alpha_u": false,
+"edge_alpha_v": true,
+"color": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0.876652,
+0.962557,
+1,
+1
+]
+}
+]
+},
+"specular": {
+"name": "specular",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1e-06,
+7.89341e-07,
+2.64317e-07,
+1
+]
+}
+]
+},
+"dissolve": {
+"name": "dissolve",
+"target": "",
+"attr": 12,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+]
+},
+"distortion": {
+"name": "distortion",
+"target": "",
+"attr": 13,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+]
+},
+"rim_alpha": 0,
+"depth_fade_width": 0,
+"camera_fade_param": {
+"x": 0,
+"y": 1,
+"z": 0,
+"w": 1
+},
+"point_count": 16,
+"subdiv_count": 3,
+"width": 0.4,
+"width_bias": 0.5,
+"width_axis": 0,
+"trail_flag": 0
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/texture[]": {
+"objects": 1224,
+"required": [
+"filename",
+"flags",
+"uv_mode",
+"uv_info"
+],
+"order": [
+"filename",
+"flags",
+"uv_mode",
+"uv_info",
+"anime_info"
+],
+"defaults": {
+"filename": "effl_a008",
+"flags": 0,
+"uv_mode": {
+"u": 0,
+"v": 0
+},
+"uv_info": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+1,
+1
+]
+}
+]
+}
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/texture[]/uv_mode": {
+"objects": 1224,
+"required": [
+"u",
+"v"
+],
+"order": [
+"u",
+"v"
+],
+"defaults": {
+"u": 0,
+"v": 0
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/texture[]/uv_info": {
+"objects": 1224,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "uv_info",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/texture[]/uv_info/Keys[]": {
+"objects": 1393,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0,
+0,
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/shape_param": {
+"objects": 892,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 1,
+"y": 1,
+"z": 0,
+"w": 1
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/color": {
+"objects": 892,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "color",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0.876652,
+0.962557,
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/color/Keys[]": {
+"objects": 2306,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1,
+1,
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/specular": {
+"objects": 892,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "specular",
+"target": "",
+"attr": 15,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1e-06,
+7.89341e-07,
+2.64317e-07,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/specular/Keys[]": {
+"objects": 1187,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1e-06,
+7.89341e-07,
+2.64317e-07,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/dissolve": {
+"objects": 892,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "dissolve",
+"target": "",
+"attr": 12,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/dissolve/Keys[]": {
+"objects": 946,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+0
+]
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/distortion": {
+"objects": 892,
+"required": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"order": [
+"name",
+"target",
+"attr",
+"pre",
+"post",
+"Keys"
+],
+"defaults": {
+"name": "distortion",
+"target": "",
+"attr": 13,
+"pre": 0,
+"post": 0,
+"Keys": [
+{
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+]
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/distortion/Keys[]": {
+"objects": 895,
+"required": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"order": [
+"time",
+"interp",
+"in_x",
+"in_y",
+"out_x",
+"out_y",
+"value"
+],
+"defaults": {
+"time": 0,
+"interp": 0,
+"in_x": 0,
+"in_y": 0,
+"out_x": 0,
+"out_y": 0,
+"value": [
+1,
+1
+]
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/camera_fade_param": {
+"objects": 892,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 0,
+"y": 1,
+"z": 0,
+"w": 1
+}
+},
+"/VFX/Emitter[]/Module[DecalRenderer]/texture[]/anime_info": {
+"objects": 3813,
+"required": [
+"start_random",
+"start_random_snap"
+],
+"order": [
+"start_random",
+"start_random_snap"
+],
+"defaults": {
+"start_random": 0,
+"start_random_snap": 0
+}
+},
+"/VFX/Emitter[]/Module[MeshRenderer]/texture[]/anime_info": {
+"objects": 46569,
+"required": [
+"start_random",
+"start_random_snap"
+],
+"order": [
+"start_random",
+"start_random_snap"
+],
+"defaults": {
+"start_random": 0,
+"start_random_snap": 0
+}
+},
+"/VFX/Emitter[]/Module[GPUParticleRenderer]/texture[]/anime_info": {
+"objects": 6081,
+"required": [
+"start_random",
+"start_random_snap"
+],
+"order": [
+"start_random",
+"start_random_snap"
+],
+"defaults": {
+"start_random": 0,
+"start_random_snap": 0
+}
+},
+"/VFX/Emitter[]/Memo": {
+"objects": 253,
+"required": [
+"text",
+"Color",
+"scale",
+"angle",
+"distance"
+],
+"order": [
+"text",
+"Color",
+"scale",
+"angle",
+"distance"
+],
+"defaults": {
+"text": "on_sw",
+"Color": {
+"r": 1,
+"g": 1,
+"b": 1,
+"a": 1
+},
+"scale": 1.5,
+"angle": 0,
+"distance": 35
+}
+},
+"/VFX/Emitter[]/Memo/Color": {
+"objects": 253,
+"required": [
+"r",
+"g",
+"b",
+"a"
+],
+"order": [
+"r",
+"g",
+"b",
+"a"
+],
+"defaults": {
+"r": 1,
+"g": 1,
+"b": 1,
+"a": 1
+}
+},
+"/VFX/Emitter[]/Module[Collider]": {
+"objects": 363,
+"required": [
+"type",
+"shape",
+"shape_param",
+"axis",
+"offset",
+"collision_mask",
+"flags",
+"restitution"
+],
+"order": [
+"type",
+"shape",
+"shape_param",
+"axis",
+"offset",
+"collision_mask",
+"flags",
+"restitution"
+],
+"defaults": {
+"type": "Collider",
+"shape": 0,
+"shape_param": {
+"x": 0.1,
+"y": 0,
+"z": 0,
+"w": 0
+},
+"axis": 2,
+"offset": {
+"x": 0,
+"y": 0,
+"z": 0
+},
+"collision_mask": 2,
+"flags": 0,
+"restitution": 0.9
+}
+},
+"/VFX/Emitter[]/Module[Collider]/shape_param": {
+"objects": 363,
+"required": [
+"x",
+"y",
+"z",
+"w"
+],
+"order": [
+"x",
+"y",
+"z",
+"w"
+],
+"defaults": {
+"x": 0.1,
+"y": 0,
+"z": 0,
+"w": 0
+}
+},
+"/VFX/Emitter[]/Module[Collider]/offset": {
+"objects": 363,
+"required": [
+"x",
+"y",
+"z"
+],
+"order": [
+"x",
+"y",
+"z"
+],
+"defaults": {
+"x": 0,
+"y": 0,
+"z": 0
+}
+},
+"/VFX/Emitter[]/Module[TrailRenderer]/texture[]/anime_info": {
+"objects": 642,
+"required": [
+"start_random",
+"start_random_snap"
+],
+"order": [
+"start_random",
+"start_random_snap"
+],
+"defaults": {
+"start_random": 0,
+"start_random_snap": 0
+}
+},
+"/VFX/Emitter[]/Module[Event]/SE": {
+"objects": 110,
+"required": [
+"file_name",
+"output_voice_id",
+"volume_decibel",
+"pitch_ratio",
+"Envelope",
+"start_sample",
+"Audio3D",
+"interval_time"
+],
+"order": [
+"file_name",
+"output_voice_id",
+"volume_decibel",
+"pitch_ratio",
+"Envelope",
+"start_sample",
+"Audio3D",
+"interval_time"
+],
+"defaults": {
+"file_name": "ed8h2002",
+"output_voice_id": 23,
+"volume_decibel": 0,
+"pitch_ratio": 1,
+"Envelope": {
+"enable": false,
+"attack_time": 0,
+"attack_level": 1,
+"decay_time": 0,
+"sustain_level": 1,
+"release_time": 0
+},
+"start_sample": 0,
+"Audio3D": {
+"enable": false,
+"radius": 0,
+"range": 50
+},
+"interval_time": 0.1
+}
+},
+"/VFX/Emitter[]/Module[Event]/SE/Envelope": {
+"objects": 110,
+"required": [
+"enable",
+"attack_time",
+"attack_level",
+"decay_time",
+"sustain_level",
+"release_time"
+],
+"order": [
+"enable",
+"attack_time",
+"attack_level",
+"decay_time",
+"sustain_level",
+"release_time"
+],
+"defaults": {
+"enable": false,
+"attack_time": 0,
+"attack_level": 1,
+"decay_time": 0,
+"sustain_level": 1,
+"release_time": 0
+}
+},
+"/VFX/Emitter[]/Module[Event]/SE/Audio3D": {
+"objects": 110,
+"required": [
+"enable",
+"radius",
+"range"
+],
+"order": [
+"enable",
+"radius",
+"range"
+],
+"defaults": {
+"enable": true,
+"radius": 0,
+"range": 50
+}
+},
+"/VFX/Emitter[]/Module[Event]/UserParam": {
+"objects": 7,
+"required": [
+"string"
+],
+"order": [
+"string"
+],
+"defaults": {
+"string": "VFX:\nfile=\"battle/b0050_atk03_2\"\nowner=hit\npos=hit\noffset_rot= -60,0,60\ntime=system\nfollow=hit\n"
+}
+}
+}
+}

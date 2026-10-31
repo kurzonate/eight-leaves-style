@@ -1,0 +1,5 @@
+__pycache__/
+release/build/
+release/dist/
+release/data/files/
+*.log

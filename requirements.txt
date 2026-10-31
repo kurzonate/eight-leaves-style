@@ -1,0 +1,5 @@
+numpy==2.3.2
+zstandard==0.23.0
+lz4==4.4.5
+etcpak==0.9.15
+texture2ddecoder==1.0.6
