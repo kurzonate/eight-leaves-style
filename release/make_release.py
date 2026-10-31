@@ -143,8 +143,8 @@ def notices():
     print(f'notices: {len(BUNDLED)} components, {len(text)} characters')
 
 
-VERSION = '1.0.2'   # 1.0.1: Zeroth / Nilmoon Gleam put everyone back in place (S33); 1.0.2: Estelle past level 38
-                    # learns Eight Leaves Style at the next battle's start
+VERSION = '1.0.2'   # 1.0.1: Zeroth / Nilmoon Gleam put everyone back in place (S33); 1.0.2: Estelle learns
+                    # Eight Leaves Style at the next battle's start, at any level
 
 
 def zip_release():

@@ -115,7 +115,7 @@ class App:
             return self.ask(f'{len(differ)} rebuilt files differ from the mod\'s own build (a different game version?).\n'
                             'Install anyway?')
         self.run(lambda: X.install(self.horizon.get(), self.sky.get(), self.log, self.progress, accept),
-                 'Installed. Eight Leaves Style is learned by Estelle at level 38.')
+                 'Installed. Estelle learns Eight Leaves Style at the start of your next battle.')
 
     def uninstall(self):
         self.run(lambda: X.uninstall(self.sky.get(), self.log), 'Uninstalled. The game\'s original archives are back.')

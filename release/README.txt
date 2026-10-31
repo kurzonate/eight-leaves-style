@@ -1,9 +1,9 @@
 Eight Leaves Style - Shizuna's moveset for Estelle
 Trails in the Sky 2nd Chapter (Steam)
 
-Estelle learns "Eight Leaves Style" (level 38): a 0 CP craft that has her draw a katana and fight with
-Shizuna's moves from Trails beyond the Horizon. "Cassius Style" switches back to her staff. If she is
-already level 38 or higher, she learns it at the start of your next battle.
+Estelle learns "Eight Leaves Style" at the start of your next battle, at any level: a 0 CP craft that has
+her draw a katana and fight with Shizuna's moves from Trails beyond the Horizon. "Cassius Style" switches
+back to her staff.
 
   - Shizuna's idle, movement, attacks and follow-ups, with her katana and sheath
   - Crafts: Duality, Raging Blizzard, Ninety-Nine Gales, Oni-Kagura, Zeroth Gleam (S-craft)
