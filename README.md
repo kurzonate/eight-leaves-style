@@ -80,6 +80,17 @@ from this repository alone. The `exe` step packs the Python files above with the
 installer from source without building anything: `python release/extract.py install <Horizon folder> <Sky folder>`
 (the eight mod files must be in `release/data/files`).
 
+## Versions
+
+- **1.0.2:**
+  - Estelle learns Eight Leaves Style at the start of the next battle, at any level. Before, it came only from a
+    level-up to 38, which players already past 38 never got.
+  - Zeroth Gleam and Nilmoon Gleam put Estelle and the enemies back where they stood. Before, they could be left
+    moved after the S-craft.
+- **1.0.1:** packaging error. It was meant to carry the S-craft fix above, but the release script took a stale copy
+  of the mod's scripts, so it played like 1.0.0. `make_release.py` now takes them from the compiler's output.
+- **1.0.0:** first release.
+
 ## Credits
 
 Community tools this mod was made with:
