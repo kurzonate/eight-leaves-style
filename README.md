@@ -82,12 +82,32 @@ installer from source without building anything: `python release/extract.py inst
 
 ## Credits
 
-- The model and material layouts in `tools/kuro_mdl.py` and `tools/kuro_materials.py` follow eArmada8's
-  `kuro_mdl_tool`.
-- The mod's scripts were decompiled and compiled with KuroTools (not part of the installer).
-- *Trails in the Sky 2nd Chapter* and *Trails beyond the Horizon* are © Nihon Falcom. This repository contains
-  none of their files.
+Community tools this mod was made with:
+
+- **[KuroTools](https://github.com/nnguyen259/KuroTools)** by Nhan Nguyen (MIT): every script of the mod was
+  decompiled and compiled with it. It isn't part of the installer, which ships the compiled scripts.
+- **[kuro_mdl_tool](https://github.com/eArmada8/kuro_mdl_tool)** by eArmada8 (GPL-3.0): the model, motion and
+  material layouts that `tools/kuro_mdl.py` and `tools/kuro_materials.py` read and write follow it.
+- **[ed8pkg2gltf](https://github.com/eArmada8/ed8pkg2gltf)** by eArmada8, built on uyjulian's
+  [ed8pkg2glb](https://github.com/uyjulian/ed8pkg2glb) (MIT): used during development for an early motion
+  experiment. Nothing from it is in the mod.
+
+Libraries bundled in the installer `.exe`, each under its own license (full texts in
+[release/THIRD_PARTY_NOTICES.txt](release/THIRD_PARTY_NOTICES.txt), which ships with the `.exe`):
+- Python;
+- Tcl/Tk;
+- NumPy;
+- python-zstandard;
+- python-lz4;
+- [etcpak](https://github.com/K0lb3/etcpak) and [texture2ddecoder](https://github.com/K0lb3/texture2ddecoder) by
+  K0lb3, with the code inside them by Bartosz Taudul, Perfare, Ishotihadus, Marat Dukhan, Binomial and Unity;
+- archspec;
+- the PyInstaller bootloader.
+
+*Trails in the Sky 2nd Chapter* and *Trails beyond the Horizon* are © Nihon Falcom. This repository contains none
+of their files.
 
 ## License
 
-GPL-3.0: see [LICENSE](LICENSE).
+The mod's code: GPL-3.0, see [LICENSE](LICENSE). Bundled libraries: their own licenses, see
+[release/THIRD_PARTY_NOTICES.txt](release/THIRD_PARTY_NOTICES.txt).

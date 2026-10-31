@@ -4,7 +4,8 @@
                                            mod replaces and their original checksums), the mod's own files, the
                                            build's data tables
   python release/make_release.py exe       release/dist/EightLeavesStyleInstaller.exe (PyInstaller)
-  python release/make_release.py zip       release/dist/<name>.zip: the .exe and the readme
+  python release/make_release.py notices   release/THIRD_PARTY_NOTICES.txt: licenses of what the .exe bundles
+  python release/make_release.py zip       release/dist/<name>.zip: the .exe, the readme and the notices
 
 No file taken from Trails beyond the Horizon goes into the release: the manifest names them, the installer rebuilds
 them from the player's copy.
@@ -80,6 +81,68 @@ def exe():
     print('exe:', os.path.join(DIST, NAME + '.exe'))
 
 
+# what the .exe bundles besides our code: (name, distribution or None, URL, license, license files); their
+# licenses ask for these notices to travel with it
+BUNDLED = [
+    ('Python', None, 'https://www.python.org', 'PSF-2.0', [os.path.join(sys.base_prefix, 'pkgs', 'python-3.13.5-h286a616_100_cp313',
+                                                                    'LICENSE_PYTHON.txt')]),
+    ('Tcl/Tk (the installer window)', None, 'https://www.tcl-lang.org', 'Tcl/Tk license',
+     [os.path.join(sys.base_prefix, 'Library', 'lib', 'tk8.6', 'license.terms')]),
+    ('NumPy', 'numpy', 'https://numpy.org', 'BSD-3-Clause', ['numpy-*.dist-info/LICENSE.txt']),
+    ('python-zstandard', 'zstandard', 'https://github.com/indygreg/python-zstandard', 'BSD-3-Clause',
+     ['zstandard-*.dist-info/LICENSE']),
+    ('python-lz4', 'lz4', 'https://github.com/python-lz4/python-lz4', 'BSD-3-Clause', ['lz4-*.dist-info/licenses/LICENSE']),
+    ('etcpak (Python bindings by K0lb3, of etcpak by Bartosz Taudul)', 'etcpak', 'https://github.com/K0lb3/etcpak', 'MIT',
+     ['etcpak-*.dist-info/LICENSE']),
+    ('texture2ddecoder', 'texture2ddecoder', 'https://github.com/K0lb3/texture2ddecoder', 'MIT',
+     ['texture2ddecoder-*.dist-info/LICENSE']),
+    ('archspec (used by etcpak)', 'archspec', 'https://github.com/archspec/archspec', 'Apache-2.0 OR MIT (MIT chosen)',
+     ['archspec/json/LICENSE-MIT', 'archspec/json/NOTICE']),
+    ('PyInstaller bootloader', 'pyinstaller', 'https://pyinstaller.org', 'GPL-2.0-or-later with the bootloader exception',
+     ['pyinstaller-*.dist-info/licenses/COPYING.txt']),
+]
+# code inside those packages' compiled modules that their own license files don't cover (texts in release/licenses,
+# from each project's GitHub repository)
+UPSTREAM = [
+    ('etcpak by Bartosz Taudul (inside etcpak)', 'https://github.com/wolfpld/etcpak', 'wolfpld_etcpak.txt'),
+    ('AssetStudio Texture2DDecoder by Perfare: BCn and ATC codecs (inside texture2ddecoder)',
+     'https://github.com/Perfare/AssetStudio', 'Perfare_AssetStudio.txt'),
+    ('mikunyan by Ishotihadus: ASTC, ETC and PVRTC codecs (inside texture2ddecoder)',
+     'https://github.com/Ishotihadus/mikunyan', 'Ishotihadus_mikunyan.txt'),
+    ('FP16 by Marat Dukhan (inside texture2ddecoder)', 'https://github.com/Maratyszcza/FP16', 'Maratyszcza_FP16.txt'),
+    ('crunch by Binomial LLC (inside texture2ddecoder)', 'https://github.com/BinomialLLC/crunch', 'BinomialLLC_crunch.txt'),
+    ('crunch, Unity version (inside texture2ddecoder)', 'https://github.com/Unity-Technologies/crunch',
+     'Unity-Technologies_crunch.txt'),
+]
+
+
+def notices():
+    """release/THIRD_PARTY_NOTICES.txt: the license of everything the .exe bundles besides the mod's own code."""
+    import glob
+    import importlib.metadata as md
+    site = os.path.dirname(os.path.dirname(md.distribution('numpy').locate_file('numpy/__init__.py')))
+    out = ['Third-party software bundled in EightLeavesStyleInstaller.exe', '=' * 62, '',
+           'The installer is a Python program packed with PyInstaller. Besides its own code (GPL-3.0, see the',
+           'source at https://github.com/kurzonate/eight-leaves-style), it contains:', '']
+    for name, dist, url, lic, files in BUNDLED:
+        version = md.version(dist) if dist else ('3.13.5' if name == 'Python' else '8.6')
+        out.append(f'  - {name} {version}: {lic}, {url}')
+    for name, dist, url, lic, files in BUNDLED:
+        out += ['', '', '-' * 78, f'{name} ({url})', f'License: {lic}', '-' * 78, '']
+        for pattern in files:
+            paths = glob.glob(pattern) if os.path.isabs(pattern) else glob.glob(os.path.join(site, pattern))
+            assert len(paths) == 1, (name, pattern, paths)
+            out.append(open(paths[0], encoding='utf8', errors='replace').read().strip())
+            out.append('')
+    out += ['', '', '=' * 78, 'Code inside the packages above, under its own license', '=' * 78]
+    for name, url, file in UPSTREAM:
+        out += ['', '-' * 78, f'{name} ({url})', '-' * 78, '',
+                open(os.path.join(HERE, 'licenses', file), encoding='utf8').read().strip(), '']
+    text = '\n'.join(out) + '\n'
+    open(os.path.join(HERE, 'THIRD_PARTY_NOTICES.txt'), 'w', encoding='utf8').write(text)
+    print(f'notices: {len(BUNDLED)} components, {len(text)} characters')
+
+
 VERSION = '1.0.1'   # 1.0.1: Zeroth / Nilmoon Gleam put everyone back in place (S33)
 
 
@@ -88,8 +151,9 @@ def zip_release():
     with zipfile.ZipFile(z, 'w', zipfile.ZIP_DEFLATED) as f:
         f.write(os.path.join(DIST, NAME + '.exe'), NAME + '.exe')
         f.write(os.path.join(HERE, 'README.txt'), 'README.txt')
+        f.write(os.path.join(HERE, 'THIRD_PARTY_NOTICES.txt'), 'THIRD_PARTY_NOTICES.txt')
     print('zip:', z)
 
 
 if __name__ == '__main__':
-    {'data': data, 'exe': exe, 'zip': zip_release}[sys.argv[1]]()
+    {'data': data, 'exe': exe, 'notices': notices, 'zip': zip_release}[sys.argv[1]]()

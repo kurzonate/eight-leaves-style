@@ -35,3 +35,15 @@ NOTES
   - Other mods that change Estelle's battle script or the craft tables are not compatible.
   - Untested: loading a save made with the mod after uninstalling it. Such a save lists Eight Leaves Style
     among Estelle's crafts, which the game's own tables don't have. Keep a save from before installing.
+
+CREDITS
+  - KuroTools by Nhan Nguyen (github.com/nnguyen259/KuroTools): the mod's scripts were decompiled and
+    compiled with it.
+  - kuro_mdl_tool by eArmada8 (github.com/eArmada8/kuro_mdl_tool): the model, motion and material formats
+    the installer reads and writes follow it.
+  - ed8pkg2gltf by eArmada8, built on uyjulian's ed8pkg2glb: used during development.
+  - The installer bundles Python, Tcl/Tk, NumPy, python-zstandard, python-lz4, etcpak, texture2ddecoder,
+    archspec and the PyInstaller bootloader: their licenses are in THIRD_PARTY_NOTICES.txt.
+  - Source code of the installer (GPL-3.0): https://github.com/kurzonate/eight-leaves-style
+  - Trails in the Sky 2nd Chapter and Trails beyond the Horizon are (c) Nihon Falcom. This download
+    contains none of Trails beyond the Horizon's files.
