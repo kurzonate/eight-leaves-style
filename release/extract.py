@@ -118,9 +118,11 @@ def build_assets(m, horizon, pac_dir, log, progress):
     return files
 
 
-def install(horizon_folder, sky_folder, log=print, progress=lambda done, total, what: None, accept_differences=None):
+def install(horizon_folder, sky_folder, log=print, progress=lambda done, total, what: None, accept_differences=None,
+            accept_changed=None):
     """accept_differences(list) -> bool: asked when rebuilt files differ from the mod's build (other game versions);
-    None: refuse."""
+    accept_changed(list) -> bool: asked when the Sky files the mod replaces aren't the ones it was built against
+    (another Sky version: Steam's Verify integrity can't help there). None: refuse."""
     m = manifest()
     horizon = horizon_archives(horizon_folder)
     if not horizon:
@@ -132,9 +134,11 @@ def install(horizon_folder, sky_folder, log=print, progress=lambda done, total, 
         raise Problem('The mod is already installed. Uninstall it first.')
     changed = check_versions(m, pac_dir)
     if changed:
-        raise Problem('These game files are not the versions the mod was made for (a game update, or another mod):\n  '
-                      + '\n  '.join(changed) + '\nRestore the original game files (Steam: Properties > Installed Files > '
-                      'Verify integrity) and try again.')
+        log('These game files differ from the ones the mod was built against (another game version, or another '
+            'mod):\n  ' + '\n  '.join(changed))
+        if not (accept_changed and accept_changed(changed)):
+            raise Problem('Stopped: these game files differ from the ones the mod was built against:\n  '
+                          + '\n  '.join(changed))
 
     log('Rebuilding the mod\'s files from Trails beyond the Horizon...')
     built = build_assets(m, horizon, pac_dir, log, progress)
@@ -211,7 +215,8 @@ def main(argv):
         if argv[1:2] == ['selftest']:
             selftest()
         elif argv[1:2] == ['install'] and len(argv) == 4:
-            install(argv[2], argv[3], accept_differences=lambda d: input(f'{len(d)} files differ; install anyway? [y/N] ') == 'y')
+            install(argv[2], argv[3], accept_differences=lambda d: input(f'{len(d)} files differ; install anyway? [y/N] ') == 'y',
+                    accept_changed=lambda c: input(f'{len(c)} game files differ; install anyway? [y/N] ') == 'y')
         elif argv[1:2] == ['uninstall'] and len(argv) == 3:
             uninstall(argv[2])
         elif argv[1:2] == ['status'] and len(argv) == 3:

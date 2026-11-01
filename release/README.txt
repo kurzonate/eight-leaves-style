@@ -30,9 +30,10 @@ UNINSTALL
 NOTES
   - The installer adds the mod's files to the game's archives in pac\steam and keeps what it needs to
     undo that in pac\steam\eight_leaves_style_undo. Don't delete that folder while the mod is installed.
-  - If the installer says game files are not the versions the mod was made for, the game was updated or
-    another mod changed the same files. Use Steam > Properties > Installed Files > Verify integrity, then
-    install again.
+  - If the installer says some game files differ from the ones the mod was built against, your game is a
+    different version, or another mod changed those files. On a different version, answer Yes: the mod
+    works there. If another mod changed them, uninstall that mod first (or use Steam > Properties >
+    Installed Files > Verify integrity), then install again.
   - Other mods that change Estelle's battle script or the craft tables are not compatible.
   - Untested: loading a save made with the mod after uninstalling it. Such a save lists Eight Leaves Style
     among Estelle's crafts, which the game's own tables don't have. Keep a save from before installing.

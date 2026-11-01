@@ -114,7 +114,15 @@ class App:
         def accept(differ):
             return self.ask(f'{len(differ)} rebuilt files differ from the mod\'s own build (a different game version?).\n'
                             'Install anyway?')
-        self.run(lambda: X.install(self.horizon.get(), self.sky.get(), self.log, self.progress, accept),
+        def accept_changed(changed):
+            return self.ask('Some of the game files the mod replaces differ from the ones it was built against:\n  '
+                            + '\n  '.join(changed) + '\n\n'
+                            'This is expected on a different version of Trails in the Sky 2nd Chapter, and the mod '
+                            'works there. While it is installed, the mod\'s versions of these files are used, so a '
+                            'change your game version made to them (Estelle\'s battle script, the craft tables) is '
+                            'set aside until you uninstall. Mods that change the same files are not compatible.\n\n'
+                            'Install anyway?')
+        self.run(lambda: X.install(self.horizon.get(), self.sky.get(), self.log, self.progress, accept, accept_changed),
                  'Installed. Estelle learns Eight Leaves Style at the start of your next battle.')
 
     def uninstall(self):

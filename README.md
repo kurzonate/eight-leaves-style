@@ -17,8 +17,9 @@ code that built the mod. This repository is that code, published so you can see 
    from Steam's `libraryfolders.vdf` and can be changed.
 2. **Checks the game version.** The mod replaces eight files inside Sky's archives (Estelle's battle script and
    `btlcom` in Japanese and English, plus the craft and status tables in both). The checksum of each original file
-   must match `release/data/manifest.json`, which the mod was built against. If it doesn't, the installer stops
-   (a game update or another mod changed them).
+   is compared with `release/data/manifest.json`, which the mod was built against. If any differ (another game
+   version, or another mod), the installer names them and asks before going on: the mod's versions replace them
+   while it is installed.
 3. **Rebuilds the Horizon files** (`port/assets.py`, function `build`). The manifest lists every file to rebuild
    and the settings used. Horizon's archives are only read (`tools/p3a.py`). Sky's archives are read for Estelle's
    skeleton, her eye texture and a few model files. The conversions:
@@ -82,6 +83,9 @@ installer from source without building anything: `python release/extract.py inst
 
 ## Versions
 
+- **1.0.3:** the installer works on other versions of Sky. Before, it stopped when the files the mod replaces
+  weren't byte for byte the ones it was built against, and Steam's Verify integrity couldn't fix that on another
+  game version. Now it names them and asks. The mod itself is unchanged.
 - **1.0.2:**
   - Estelle learns Eight Leaves Style at the start of the next battle, at any level. Before, it came only from a
     level-up to 38, which players already past 38 never got.
